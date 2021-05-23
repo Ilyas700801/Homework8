@@ -16,10 +16,10 @@ public class Hulk extends Avenger {
 
         for (int i = 0; i < avengers.length; i++) {
             if (avengers[i].getHealth() > 0 && this.getHealth() > 0) {
-                thanos.setHealth(thanos.getHealth() - magicCoef);
+                avengers[i].setDamage(avengers[i].getDamage()+ magicCoef);
             }
         }
-        System.out.println("Маг повысил урон на " + (avengers.length * magicCoef));
+        System.out.println("Маг повысил урон на " +  magicCoef);
 
 
     }
